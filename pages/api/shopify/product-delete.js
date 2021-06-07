@@ -4,6 +4,7 @@ const getRawBody = require('raw-body')
 
 const sanity = sanityClient({
   dataset: process.env.SANITY_PROJECT_DATASET,
+  apiVersion: '2021-03-25',
   projectId: process.env.SANITY_PROJECT_ID,
   token: process.env.SANITY_API_TOKEN,
   useCdn: false,
